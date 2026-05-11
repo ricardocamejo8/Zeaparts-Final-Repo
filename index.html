@@ -936,10 +936,11 @@ p  { margin: 0 0 1em; color: #d8d8d8; }
   color: #003e7e;
 }
 .ml-badge svg { width: 22px; height: 22px; }
-.ml-badge-handshake { color: #003e7e; padding-right: 26px; }
+.ml-badge-handshake { color: #1D3A6A; padding: 12px 20px; background: #fff; border-radius: 12px; }
+.ml-badge-handshake svg { width: 200px; height: 54px; display: block; }
 .ml-badge-handshake span { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.01em; text-transform: lowercase; }
-.ml-badge-official { color: #ffe600; background: #003e7e; }
-.ml-badge-official svg { color: #ffe600; }
+.ml-badge-official { color: #fff; background: #00a650; }
+.ml-badge-official svg { color: #fff; }
 .ml-badge-official span { font-size: .85rem; letter-spacing: 0.12em; }
 .ml-store-name {
   margin-top: 6px;
@@ -1443,8 +1444,7 @@ body.wireframe .wf-banner {
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-carousel" id="heroCarousel">
-          <div class="hero-slide is-active" data-label="SPARK"><img src="assets/hero-spark.jpg" alt="" loading="eager" decoding="async" style="object-fit:cover;padding:0;mix-blend-mode:normal;object-position:center 60%;" /></div>
-          <div class="hero-slide" data-label="SPARK GT"><img src="assets/hero-spark-green.png" alt="" loading="lazy" decoding="async" /></div>
+          <div class="hero-slide is-active" data-label="SPARK GT"><img src="assets/hero-spark-green.png" alt="" loading="eager" decoding="async" /></div>
           <div class="hero-slide" data-label="SAIL"><img src="assets/hero-sail-red.png" alt="" loading="lazy" decoding="async" /></div>
           <div class="hero-slide" data-label="AVEO"><img src="assets/hero-aveo-yellow.png" alt="" loading="lazy" decoding="async" /></div>
         </div>
@@ -1494,33 +1494,70 @@ body.wireframe .wf-banner {
       <div class="ml-left">
         <div class="ml-badges">
           <span class="ml-badge ml-badge-handshake" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
-            <span>mercado libre</span>
+            <!-- Logo oficial Mercado Libre -->
+            <svg viewBox="0 0 360 96" xmlns="http://www.w3.org/2000/svg" aria-label="Mercado Libre">
+              <!-- Óvalo amarillo con borde azul -->
+              <ellipse cx="52" cy="48" rx="48" ry="44" fill="#FFE600" stroke="#1D3A6A" stroke-width="4.5"/>
+              <!-- Apretón de manos (handshake) -->
+              <g fill="white" stroke="#1D3A6A" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Mano derecha (superior) — viene desde arriba-derecha -->
+                <path stroke-width="1.8" d="M82 18 C76 24 68 30 60 36 L54 36 C50 34 44 34 40 36 L34 42 L36 50 C42 48 50 47 56 49 C64 43 72 35 80 26 Z"/>
+                <!-- Dedos mano derecha -->
+                <line stroke-width="1.6" x1="72" y1="20" x2="78" y2="13"/>
+                <line stroke-width="1.6" x1="76" y1="25" x2="83" y2="18"/>
+                <line stroke-width="1.6" x1="80" y1="30" x2="87" y2="23"/>
+                <!-- Mano izquierda (inferior) — viene desde abajo-izquierda -->
+                <path stroke-width="1.8" d="M22 78 C28 70 36 62 46 56 C50 58 55 59 59 58 C65 54 71 48 77 42 L71 36 C65 42 59 48 53 52 C49 52 43 51 36 54 Z"/>
+                <!-- Nudillos mano izquierda -->
+                <circle cx="26" cy="75" r="3.2"/>
+                <circle cx="33" cy="70" r="3.2"/>
+                <circle cx="40" cy="65" r="3.2"/>
+                <circle cx="47" cy="61" r="3.2"/>
+              </g>
+              <!-- Texto "mercado" línea 1 -->
+              <text x="114" y="44" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="34" fill="#1D3A6A" letter-spacing="-0.5">mercado</text>
+              <!-- Texto "libre" línea 2 -->
+              <text x="114" y="84" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="34" fill="#1D3A6A" letter-spacing="-0.5">libre</text>
+            </svg>
           </span>
           <span class="ml-badge ml-badge-official">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 9.5 4.5 6 4l-.5 3.5L2 9.5l1.5 3.5L2 16l3.5 1.5L6 21l3.5-.5L12 23l2.5-2.5L18 21l.5-3.5L22 16l-1.5-3.5L22 9.5 18.5 8 18 4l-3.5.5z"/><path d="m9.5 13.2-2-2-1.4 1.4 3.4 3.4 6.4-6.4-1.4-1.4z" fill="#fff"/></svg>
             <span>TIENDA OFICIAL</span>
           </span>
-          <div class="ml-store-name">TRCL</div>
+          <div class="ml-store-name">ZEAPARTS LIMITADA</div>
         </div>
       </div>
       <div class="ml-right">
         <div class="eyebrow"><span>Tienda oficial</span></div>
         <h2>Compra con confianza en Mercado Libre</h2>
-        <p>Nuestra tienda oficial <b>TRCL</b> es <b>MercadoLíder Platinum</b>, el nivel más alto de reputación en Mercado Libre.</p>
+        <p>Nuestra tienda oficial <b>ZEAPARTS LIMITADA</b> es <b>MercadoLíder Platinum</b>, el nivel más alto de reputación en Mercado Libre Chile.</p>
         <div class="ml-stats">
           <div class="ml-stat">
             <span class="ml-stat-icon" aria-hidden="true">★</span>
             <div>
-              <div class="ml-stat-label">MercadoLíder Platinum</div>
+              <div class="ml-stat-label">Reputación · MercadoLíder Platinum</div>
               <div class="ml-stat-value"><b>+10.000 ventas</b> en los últimos 60 días</div>
               <div class="ml-meter"><span class="ml-meter-fill"></span></div>
             </div>
           </div>
+          <div class="ml-stat" style="margin-top:14px;">
+            <span class="ml-stat-icon" aria-hidden="true">✓</span>
+            <div>
+              <div class="ml-stat-label">Calificación de compradores</div>
+              <div class="ml-stat-value"><b>98% de opiniones positivas</b></div>
+            </div>
+          </div>
+          <div class="ml-stat" style="margin-top:14px;">
+            <span class="ml-stat-icon" aria-hidden="true">🚚</span>
+            <div>
+              <div class="ml-stat-label">Despacho</div>
+              <div class="ml-stat-value"><b>Envío gratis</b> a todo Chile · Mercado Envíos Full</div>
+            </div>
+          </div>
         </div>
-        <a class="btn btn-ml" href="https://www.mercadolibre.cl/perfil/TRCL" target="_blank" rel="noopener">
+        <a class="btn btn-ml" href="https://listado.mercadolibre.cl/pagina/zeapartslimitada/#component=menu_corridors&tracking_id=f1c1dcf3fd7cce57aa73783e5b941661&label=Todos+los+productos&global_position=1" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          Ir a tienda oficial en Mercado Libre
+          Ver todos los productos en Mercado Libre
         </a>
       </div>
     </div>
