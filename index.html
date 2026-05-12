@@ -2,6 +2,13 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MKPZRV3S');</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>ZEAPARTS · Repuestos Chevrolet Spark, Aveo y Sail · Estación Central</title>
 <meta name="description" content="Especialistas en repuestos Chevrolet Spark, Aveo y Sail. Cotiza por WhatsApp, despacho a todo Chile." />
@@ -911,22 +918,28 @@ p  { margin: 0 0 1em; color: #d8d8d8; }
   background:
     radial-gradient(ellipse at center, rgba(255, 225, 0, 0.18), transparent 65%),
     #fff066;
-  padding: clamp(36px, 5vw, 56px) clamp(20px, 3vw, 32px);
+  padding: clamp(24px, 4vw, 56px) clamp(16px, 3vw, 32px);
   display: flex; align-items: center; justify-content: center;
-  min-height: 280px;
+  min-height: 200px;
   border: 1px solid rgba(0,0,0,0.18);
+  min-width: 0;
+  overflow: hidden;
+}
+@media (min-width: 880px) {
+  .ml-left { min-height: 280px; }
 }
 .ml-badges {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  width: 100%;
 }
 .ml-badge {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 22px;
+  padding: 12px 18px;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.05rem;
@@ -934,22 +947,24 @@ p  { margin: 0 0 1em; color: #d8d8d8; }
   border-radius: 999px;
   background: #fff;
   color: #003e7e;
+  max-width: 100%;
 }
-.ml-badge svg { width: 22px; height: 22px; }
-.ml-badge-handshake { color: #1D3A6A; padding: 14px 22px; background: #fff; border-radius: 12px; }
-.ml-badge-handshake img { width: 180px; height: auto; display: block; }
+.ml-badge svg { width: 22px; height: 22px; flex-shrink: 0; }
+.ml-badge-handshake { color: #1D3A6A; padding: 12px 18px; background: #fff; border-radius: 12px; width: 100%; box-sizing: border-box; justify-content: center; }
+.ml-badge-handshake img { width: 100%; max-width: 160px; height: auto; display: block; }
 .ml-badge-handshake span { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.01em; text-transform: lowercase; }
-.ml-badge-official { color: #fff; background: #00a650; }
+.ml-badge-official { color: #fff; background: #00a650; width: 100%; box-sizing: border-box; justify-content: center; }
 .ml-badge-official svg { color: #fff; }
 .ml-badge-official span { font-size: .85rem; letter-spacing: 0.12em; }
 .ml-store-name {
-  margin-top: 6px;
+  margin-top: 4px;
   font-family: var(--font-mono);
-  font-size: .78rem;
+  font-size: .72rem;
   letter-spacing: 0.18em;
   color: rgba(0, 62, 126, 0.7);
+  text-align: center;
 }
-.ml-right { position: relative; }
+.ml-right { position: relative; min-width: 0; overflow: hidden; }
 .ml-right h2 { margin-top: 8px; margin-bottom: 12px; }
 .ml-right p { color: var(--silver); margin-bottom: 22px; font-size: 1.02rem; }
 .ml-right p b { color: var(--white); font-weight: 600; }
@@ -1392,6 +1407,10 @@ body.wireframe .wf-banner {
 </head>
 
 <body data-tone="mid" data-models="cards" data-cats="pills" data-hero="spec">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKPZRV3S"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- ================== TOP BAR ================== -->
 <div class="topbar"><span>🚚 Despacho rápido a todo Chile</span></div>
