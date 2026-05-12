@@ -2281,6 +2281,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const p = document.getElementById('qf-part').value.trim();
       if (!m || !p) return false;
       const msg = `Hola, necesito un repuesto para mi Chevrolet ${m}${y ? ' ' + y : ''}${c ? ' ' + c : ''}: ${p}`;
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'whatsapp_click', gtm_label: 'formulario-cotizacion' });
       window.open('https://wa.me/56950625897?text=' + encodeURIComponent(msg), '_blank', 'noopener');
       return false;
     },
