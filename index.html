@@ -321,13 +321,11 @@ p  { margin: 0 0 1em; color: #d8d8d8; }
 .hero-eyebrow { margin-bottom: 22px; }
 .chevrolet-bowtie {
   display: inline-block;
-  width: 1.1em;
+  width: 1.2em;
   height: auto;
   vertical-align: middle;
-  margin-left: 6px;
-  margin-bottom: 0.12em;
-  filter: brightness(0) invert(1);
-  opacity: 0.92;
+  margin-left: 8px;
+  margin-bottom: 0.15em;
 }
 .hero h1 {
   margin-bottom: 18px;
@@ -2072,16 +2070,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "cats": "pills"
   }/*EDITMODE-END*/;
 
+  const BOWTIE = '<img src="assets/chevrolet-bowtie.svg" class="chevrolet-bowtie" alt="" aria-hidden="true" />';
   const HERO_COPY = {
-    spec:  { h1: 'Especialistas en repuestos <span class="accent">Chevrolet</span>',
+    spec:  { h1: `Especialistas en repuestos <span class="accent">Chevrolet ${BOWTIE}</span>`,
              sub: 'Spark · Aveo · Sail — stock permanente. Repuestos originales y las mejores marcas alternativas.' },
-    speed: { h1: 'Cotiza tu repuesto Chevrolet por <span class="accent">WhatsApp</span>',
+    speed: { h1: `Cotiza tu repuesto Chevrolet ${BOWTIE} por <span class="accent">WhatsApp</span>`,
              sub: 'Respuesta en minutos. Spark, Aveo y Sail. Despachamos el mismo día a todo Chile.' },
     stock: { h1: 'Stock permanente para <span class="accent">Spark, Aveo y Sail</span>',
              sub: 'Más de 15 marcas en bodega. Si lo necesitas hoy, lo tenemos hoy.' },
-    ship:  { h1: 'Despacho <span class="accent">a todo Chile</span> — Repuestos Chevrolet',
+    ship:  { h1: `Despacho <span class="accent">a todo Chile</span> — Repuestos Chevrolet ${BOWTIE}`,
              sub: 'Spark · Aveo · Sail. Cotiza por WhatsApp y coordinamos envío en 24 horas.' },
-    store: { h1: 'Tu tienda Chevrolet en <span class="accent">Estación Central</span>',
+    store: { h1: `Tu tienda Chevrolet ${BOWTIE} en <span class="accent">Estación Central</span>`,
              sub: 'Av. Ecuador 4429 Local A. Repuestos originales y alternativos para Spark, Aveo y Sail.' }
   };
 
