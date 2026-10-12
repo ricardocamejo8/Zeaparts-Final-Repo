@@ -28,6 +28,9 @@
   "redirects": [
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/privacidad", "destination": "/politica-privacidad", "permanent": true },
-    { "source": "/envio", "destination": "/politica-envio", "permanent": true }
+    { "source": "/envio", "destination": "/politica-envio", "permanent": true },
+    { "source": "/carroceria-spark", "destination": "/carroceria?modelo=spark", "permanent": false },
+    { "source": "/carroceria-aveo", "destination": "/carroceria?modelo=aveo", "permanent": false },
+    { "source": "/carroceria-sail", "destination": "/carroceria?modelo=sail", "permanent": false }
   ]
 }
